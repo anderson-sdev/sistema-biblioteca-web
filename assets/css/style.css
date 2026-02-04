@@ -1,0 +1,133 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --primary: #38bdf8;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #1f2937;
+}
+
+/* BASE */
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #020617, #020617, #020617);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary);
+}
+
+/* CARD */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: var(--card);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+/* FORM */
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input {
+  background: #020617;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  color: var(--text);
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--muted);
+}
+
+input:focus {
+  border-color: var(--primary);
+}
+
+/* BOTÕES */
+button {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-weight: bold;
+  color: #020617;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+}
+
+/* AÇÕES */
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.acoes input {
+  flex: 1;
+}
+
+.acoes button {
+  flex: none;
+  grid-column: auto;
+}
+
+/* LISTA */
+ul {
+  list-style: none;
+}
+
+li {
+  background: #020617;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+li strong {
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+}
+

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Biblioteca</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>Sistema de Gerenciamento de Biblioteca</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <form id="formLivro">
+          <input type="number" id="codigo" placeholder="Código" required />
+          <input type="text" id="titulo" placeholder="Título" required />
+          <input type="text" id="autor" placeholder="Autor" required />
+          <input type="text" id="area" placeholder="Área" required />
+          <input type="number" id="ano" placeholder="Ano" required />
+          <input type="text" id="editora" placeholder="Editora" required />
+
+          <button type="submit">Cadastrar Livro</button>
+        </form>
+      </div>
+
+      <div class="acoes">
+        <button onclick="ordenarPorAno()">Ordenar por Ano</button>
+        <input type="number" id="buscaCodigo" placeholder="Buscar por código" />
+        <button onclick="buscarLivro()">Buscar</button>
+      </div>
+
+      <ul id="listaLivros"></ul>
+    </main>
+    <script src="assets/js/script.js" defer></script>
+  </body>
+</html>
