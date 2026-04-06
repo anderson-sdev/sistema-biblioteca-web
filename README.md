@@ -1,2 +1,2 @@
-# sistema-biblioteca-web
-Projeto pessoal inspirado em atividade acadêmica em linguagem C, adaptado para a web com HTML, CSS e JavaScript, com foco em lógica de programação, manipulação de dados e persistência no navegador, simulando um sistema de gerenciamento de biblioteca.
+# web-library-system
+Personal project inspired by academic work in the C programming language, adapted for the web using HTML, CSS, and JavaScript, focusing on programming logic, data manipulation, and browser persistence, simulating a library management system.
